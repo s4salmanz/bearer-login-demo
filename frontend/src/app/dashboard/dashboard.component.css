@@ -1,0 +1,82 @@
+:host {
+  display: block;
+}
+
+.dashboard-shell {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: linear-gradient(135deg, #ecfeff, #dbeafe);
+  font-family: Arial, sans-serif;
+}
+
+.dashboard-card {
+  width: min(100%, 540px);
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
+  padding: 30px;
+}
+
+h1 {
+  margin: 0;
+  color: #0f172a;
+  font-size: 2rem;
+}
+
+.subtitle {
+  margin: 8px 0 20px;
+  color: #475569;
+}
+
+.message-box,
+.token-box,
+.user-card {
+  margin-top: 18px;
+  padding: 14px 16px;
+  border-radius: 10px;
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+.token-box code {
+  display: block;
+  margin-top: 8px;
+  word-break: break-all;
+  color: #1d4ed8;
+}
+
+.user-card p {
+  margin: 8px 0;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.primary {
+  background: #2563eb;
+  color: white;
+}
+
+.secondary {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.danger {
+  background: #dc2626;
+  color: white;
+}

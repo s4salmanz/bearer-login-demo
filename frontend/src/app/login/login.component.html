@@ -1,0 +1,41 @@
+<main class="login-shell">
+  <section class="auth-card">
+    <h1>{{ isRegister ? 'Create account' : 'Sign in' }}</h1>
+    <p class="subtitle">Bearer token authentication demo</p>
+
+    <div class="toggle-row">
+      <button type="button" [class.active]="isRegister" (click)="isRegister = true">Register</button>
+      <button type="button" [class.active]="!isRegister" (click)="isRegister = false">Login</button>
+    </div>
+
+    <form (ngSubmit)="submitForm()" #loginForm="ngForm">
+      <label>
+        <span>Username</span>
+        <input type="text" [(ngModel)]="form.username" name="username" required />
+      </label>
+
+      <label *ngIf="isRegister">
+        <span>Full name</span>
+        <input type="text" [(ngModel)]="form.fullName" name="fullName" required />
+      </label>
+
+      <label *ngIf="isRegister">
+        <span>Email</span>
+        <input type="email" [(ngModel)]="form.email" name="email" required />
+      </label>
+
+      <label>
+        <span>Password</span>
+        <input type="password" [(ngModel)]="form.password" name="password" required />
+      </label>
+
+      <button type="submit" class="submit-btn" [disabled]="loginForm.invalid">
+        {{ isRegister ? 'Register' : 'Login' }}
+      </button>
+    </form>
+
+    <div *ngIf="message" class="message-box">
+      {{ message }}
+    </div>
+  </section>
+</main>

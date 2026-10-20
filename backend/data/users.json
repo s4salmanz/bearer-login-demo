@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "username": "demouser",
+    "password_hash": "$2b$10$MQyRFMBFUXCBg9KcaTDLOe7Okda3/3jOk/o9FSemmI7wp0k/9Jzmi",
+    "full_name": "Demo User",
+    "email": "demo@example.com"
+  },
+  {
+    "id": 2,
+    "username": "syed",
+    "password_hash": "$2b$10$R0ODGaz0RqfOXal38mFLjuP5tAdT39MHYafqaG7RkDxC00UvCiqXO",
+    "full_name": "salman zaidi",
+    "email": "salmanzaidi3@gmail.com"
+  },
+  {
+    "id": 3,
+    "username": "zaidi",
+    "password_hash": "$2b$10$HBAcGr/ic2TN6MwdTlJ4Tu8Xq7kWuQOEOqrTaUNnDJjZdJa61zyVG",
+    "full_name": "salman zaidi",
+    "email": "salmanzaidi4@gmail.com"
+  },
+  {
+    "id": 4,
+    "username": "minaz",
+    "password_hash": "$2b$10$XecFAq9HFPebLXWFoyk8yODYnsAYlUCW5puZM7UwT5Qu2C85INpXO",
+    "full_name": "minaz zaidi",
+    "email": "abc@minaz.com"
+  }
+]

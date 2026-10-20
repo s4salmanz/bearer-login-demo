@@ -1,0 +1,28 @@
+.neon/
+node_modules/
+frontend/node_modules/
+backend/node_modules/
+
+# Build output
+frontend/dist/
+backend/dist/
+.angular/
+coverage/
+
+# Environment files
+.env
+.env.local
+.env.*
+backend/.env
+backend/.env.*
+!.env.example
+!backend/.env.example
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS/editor files
+.DS_Store
+.vscode/
+.idea/

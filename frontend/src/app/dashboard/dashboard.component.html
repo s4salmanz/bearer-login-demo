@@ -1,0 +1,28 @@
+<main class="dashboard-shell">
+  <section class="dashboard-card">
+    <h1>Dashboard</h1>
+    <p class="subtitle">Protected page using a bearer token</p>
+
+    <div class="token-box">
+      <strong>Token:</strong>
+      <code>{{ token || 'No token found' }}</code>
+    </div>
+
+    <div *ngIf="message" class="message-box">
+      {{ message }}
+    </div>
+
+    <div *ngIf="user" class="user-card">
+      <p><strong>ID:</strong> {{ user.id }}</p>
+      <p><strong>Username:</strong> {{ user.username }}</p>
+      <p><strong>Full Name:</strong> {{ user.full_name }}</p>
+      <p><strong>Email:</strong> {{ user.email }}</p>
+    </div>
+
+    <div class="actions">
+      <button type="button" class="primary" (click)="loadProfile()">Refresh Profile</button>
+      <button type="button" class="secondary" routerLink="/login">Back to Login</button>
+      <button type="button" class="danger" (click)="logout()">Logout</button>
+    </div>
+  </section>
+</main>
