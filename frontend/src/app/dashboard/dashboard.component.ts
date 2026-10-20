@@ -2,6 +2,8 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
+const API_BASE_URL = 'https://api-bearer-login.onrender.com';
+
 @Component({
   selector: 'app-dashboard',
   standalone: true,
@@ -27,7 +29,7 @@ export class DashboardComponent implements OnInit {
 
   async loadProfile() {
     try {
-      const response = await fetch('http://localhost:5000/api/profile', {
+      const response = await fetch(`${API_BASE_URL}/api/profile`, {
         headers: {
           Authorization: `Bearer ${this.token}`
         }

@@ -3,6 +3,8 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router, RouterModule } from '@angular/router';
 
+const API_BASE_URL = 'https://api-bearer-login.onrender.com';
+
 @Component({
   selector: 'app-login',
   standalone: true,
@@ -23,7 +25,9 @@ export class LoginComponent {
   constructor(private router: Router) {}
 
   async submitForm() {
-    const endpoint = this.isRegister ? 'http://localhost:5000/api/register' : 'http://localhost:5000/api/login';
+    const endpoint = this.isRegister
+      ? `${API_BASE_URL}/api/register`
+      : `${API_BASE_URL}/api/login`;
 
     try {
       const response = await fetch(endpoint, {

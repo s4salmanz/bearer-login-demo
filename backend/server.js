@@ -23,6 +23,14 @@ app.get('/api/health', (req, res) => {
   res.json({ status: 'ok', message: 'Backend is running' });
 });
 
+app.get('/', (req, res) => {
+  res.json({
+    status: 'ok',
+    message: 'Backend is running',
+    routes: ['/api/health', '/api/register', '/api/login', '/api/profile']
+  });
+});
+
 app.use('/api', authRoutes);
 
 app.use((err, req, res, next) => {
