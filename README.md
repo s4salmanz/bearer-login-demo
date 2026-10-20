@@ -62,3 +62,18 @@ Then open:
 
 - http://localhost:4200
 - API: http://localhost:5000/api
+
+
+<!-- Very important note for this machine
+This Windows machine needed:
+
+direct Node path setup
+temporary PowerShell execution policy bypass for npm
+So if you see:
+
+"node" is not recognized
+or npm.ps1 cannot be loaded
+then use this exact pattern first:
+
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+$env:Path = "C:\Users\Asus\nodejs\node-v24.20.0-win-x64;$env:Path" -->
