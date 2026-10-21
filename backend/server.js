@@ -12,7 +12,7 @@ const port = process.env.PORT || 5000;
 
 app.use(
   cors({
-    origin: 'http://localhost:4200',
+    origin: 'https://api-bearer-login.onrender.com',
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
   })
